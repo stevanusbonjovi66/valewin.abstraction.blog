@@ -1,0 +1,38 @@
+<style>
+.wy-site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin: 0 0 1.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(127,127,127,0.25);
+  font-size: 0.95rem;
+}
+.wy-site-nav a { text-decoration: none; }
+.wy-site-nav a:hover { text-decoration: underline; }
+.wy-post-list { list-style: none; padding: 0; }
+.wy-post-list li { margin-bottom: 1.25rem; }
+.wy-post-date { opacity: 0.75; font-size: 0.9rem; margin-left: 0.5rem; }
+.wy-pagination { display: flex; gap: 1rem; align-items: center; margin-top: 1.5rem; }
+.wy-footer-meta {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+.wy-footer-meta a { margin-right: 0.75rem; }
+.wy-official-site {
+  margin: 1.25rem 0;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid rgba(127,127,127,0.35);
+}
+.site-footer-owner:not(.wy-brand-ready),
+.footer-ownership:not(.wy-brand-ready) {
+  visibility: hidden;
+}
+.site-footer-credits,
+.page-header a[href*="github.com/"],
+header a[href*="github.com/"] {
+  display: none !important;
+}
+</style>
+{% include_cached schema-brand.html %}
