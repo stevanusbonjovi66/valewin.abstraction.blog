@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog
+description: Artikel dan pembaruan informasi valewin — panduan, wawasan, dan berita ringkas.
+image: /assets/images/og-default.svg
+---
+
+{% include nav.html %}
+
+# Blog valewin
+
+Daftar artikel terbaru seputar **valewin**. Untuk layanan inti, kunjungi [situs resmi valewin](https://valewin.org).
+
+<ul class="wy-post-list">
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="wy-post-date">{{ post.date | date: "%d %b %Y" }}</span>
+    {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+<p>Lihat juga <a href="/resources">sumber daya</a>, <a href="/about">tentang kami</a>, dan <a href="https://valewin.org">situs resmi valewin</a>.</p>
