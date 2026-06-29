@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Dokumentasi
+    url: https://docs.github.com/pages
+    about: Panduan GitHub Pages.
+  - name: Diskusi komunitas
+    url: /discussions
+    about: Ajukan pertanyaan di tab Discussions.
