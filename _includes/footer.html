@@ -1,0 +1,21 @@
+<span class="site-footer-owner wy-brand-footer">Portal informasi <a href="https://valewin.abstraction.blog">valewin</a>.</span>
+<div class="wy-footer-meta wy-brand-footer"><a href="/atom.xml" rel="alternate" type="application/atom+xml">Atom</a><a href="/sitemap.xml">Sitemap</a></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var owner = "Portal informasi <a href=\"https://valewin.abstraction.blog\">valewin</a>.";
+  var feeds = "<a href=\"/atom.xml\" rel=\"alternate\" type=\"application/atom+xml\">Atom</a><a href=\"/sitemap.xml\">Sitemap</a>";
+  document.querySelectorAll(".site-footer-owner, .footer-ownership").forEach(function (el) {
+    el.innerHTML = owner;
+    el.classList.add("wy-brand-ready");
+    el.style.visibility = "visible";
+  });
+  document.querySelectorAll(".site-footer").forEach(function (footer) {
+    if (!footer.querySelector(".wy-footer-meta")) {
+      var meta = document.createElement("div");
+      meta.className = "wy-footer-meta wy-brand-ready";
+      meta.innerHTML = feeds;
+      footer.appendChild(meta);
+    }
+  });
+});
+</script>
