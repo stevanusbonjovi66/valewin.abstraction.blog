@@ -1,0 +1,21 @@
+name: Laporan masalah
+description: Laporkan bug atau konten yang perlu diperbaiki
+title: "[valewin] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih telah meluangkan waktu melaporkan masalah.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Apa yang terjadi?
+      description: Jelaskan perilaku yang Anda lihat.
+    validations:
+      required: true
+  - type: input
+    id: page-url
+    attributes:
+      label: URL halaman
+      placeholder: https://
